@@ -80,10 +80,6 @@ body {
   margin: 0px auto;
 }
 
-.top__line {
-  width: 1600px;
-}
-
 .top {
   display: -webkit-box;
   display: -ms-flexbox;
