@@ -2,7 +2,7 @@
 <html lang="ua">
  <head>
   <title>WebStudio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="css/style.css" />
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,30 +11,43 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;600;700&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+
  </head>
  <body>
 
 <div class="top__line">
    <div class="top container">
-      <div class="logo"><span>Web</span>Studio</div>
+      <div class="logo">
+         <span>Web</span>Studio</div>
       <nav class="top__menu">
-         <div class="menu__item">Студія</div>
-         <div class="menu__item"><a href="">Портфоліо</a></div>
-         <div class="menu__item"><a href="">Контакти</a></div>
+         <div class="menu__item here">Студія</div>
+         <div class="menu__item"><a href="portfolio.html">Портфоліо</a></div>
+         <div class="menu__item"><a href="contacts.html">Контакти</a></div>
       </nav>
       <div class="contacts">
-         <div class="contacts__item"><a href="">info@devstudio.com</a></div>
-         <div class="contacts__item">+380 66 78 38 932</div>
+         <div class="contacts__item">
+            <svg class="icons">
+            <use href="./img/sprite.svg#icon-mail"></use>
+            </svg>
+         <a href="">info@devstudio.com</a></div>
+         <div class="contacts__item">
+            <svg class="icons">
+            <use href="./img/sprite.svg#icon-phone"></use>
+            </svg>
+      +380 66 78 38 932</div>
       </div>
+      
    </div>
 </div>
 <div class="header">
+
    <div class="header__title">
       Ефективні рішення для вашого бізнесу
    </div>
    <a href="" class="headr__btn">
       Замовити послугу
    </a>
+   <div class="overlay"></div>
 </div>
 <!-- header</> -->
 <!-- <> content -->
@@ -44,18 +57,39 @@
       <div class="benefits__title title">Переваги</div>
       <div class="benefits__box">
          <div class="benefits__items">
+            <div class="benefits__img-box">
+               <svg class="benefits__icons">
+            <use href="./img/sprite.svg#icon-antenna"></use>
+            </svg>
+               
+            </div>
             <div class="benefits__items_title">УВАГА ДО ДЕТАЛЕЙ</div>
             <div class="benefits__items_subtitle">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</div>
          </div>
          <div class="benefits__items">
+            <div class="benefits__img-box">
+               <svg class="benefits__icons">
+            <use href="./img/sprite.svg#icon-clock"></use>
+            </svg>
+            </div>
             <div class="benefits__items_title">ПУНКТУАЛЬНІСТЬ</div>
             <div class="benefits__items_subtitle">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</div>
          </div>
          <div class="benefits__items">
+            <div class="benefits__img-box">
+               <svg class="benefits__icons">
+            <use href="./img/sprite.svg#icon-diagram"></use>
+            </svg>
+            </div>
             <div class="benefits__items_title">ПЛАНУВАННЯ</div>
             <div class="benefits__items_subtitle">Так само консультація з широким активом значною мірою зумовлює.</div>
          </div>
          <div class="benefits__items">
+            <div class="benefits__img-box">
+               <svg class="benefits__icons">
+            <use href="./img/sprite.svg#icon-astronaut"></use>
+            </svg>
+            </div>
             <div class="benefits__items_title">УСУЧАСНІ ТЕХНОЛОГІЇ</div>
             <div class="benefits__items_subtitle">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</div>
          </div>
@@ -89,32 +123,187 @@
             <img src="img/team/img1.jpg" alt="">
             <div class="neme">Ігор Дем'яненко</div>
             <div class="profession">Product Designer</div>
+            <div class="social__box">
+               <div class="social__items">
+                  <div>
+                  <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
+               </div>
+               <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-twitter"></use>
+            </svg>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-linkedin"></use>
+            </svg>
+            </div>
+               </div>
+            </div>
          </div>
          <div class="team__items">
             <img src="img/team/img2.jpg" alt="">
             <div class="neme">Ольга Рєпіна</div>
             <div class="profession">Frontend Developer</div>
+            <div class="social__box">
+               <div class="social__items">
+                  <div>
+                  <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
+               </div>
+               <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-twitter"></use>
+            </svg>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-linkedin"></use>
+            </svg>
+            </div>
+               </div>
+            </div>
          </div>
          <div class="team__items">
             <img src="img/team/img3.jpg" alt="">
             <div class="neme">Микола Тарасов</div>
             <div class="profession">Marketing</div>
+            <div class="social__box">
+               <div class="social__items">
+                  <div>
+                  <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
+               </div>
+               <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-twitter"></use>
+            </svg>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-linkedin"></use>
+            </svg>
+            </div>
+               </div>
+            </div>
          </div>
          <div class="team__items">
             <img src="img/team/img4.jpg" alt="">
             <div class="neme">Михайло Єрмаков</div>
             <div class="profession">UI Designer</div>
+            <div class="social__box">
+               <div class="social__items">
+                  <div>
+                  <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-instagram"></use>
+            </svg>
+               </div>
+               <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-twitter"></use>
+            </svg>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-facebook"></use>
+            </svg>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-linkedin"></use>
+            </svg>
+            </div>
+               </div>
+            </div>
          </div>
+      </div>
+   </div>
+</div>
+<div class="partners">
+   <div class="partners__title title">Постійні клієнти</div>
+   <div class="partners__row container">
+      <div class="partners__items">
+         
+         <svg class="partners__icons">
+            <use href="./img/sprite.svg#icon-partners1"></use>
+            </svg>
+      </div>
+      <div class="partners__items">
+         <svg class="partners__icons">
+            <use href="./img/sprite.svg#icon-partners2"></use>
+            </svg>
+      </div>
+      <div class="partners__items">
+         <svg class="partners__icons">
+            <use href="./img/sprite.svg#icon-partners3"></use>
+            </svg>
+      </div>
+      <div class="partners__items">
+         <svg class="partners__icons">
+            <use href="./img/sprite.svg#icon-partners4"></use>
+            </svg>
+      </div>
+      <div class="partners__items">
+         <svg class="partners__icons">
+            <use href="./img/sprite.svg#icon-partners5"></use>
+            </svg>
+      </div>
+      <div class="partners__items">
+         <svg class="partners__icons">
+            <use href="./img/sprite.svg#icon-partners6"></use>
+            </svg>
       </div>
    </div>
 </div>
 <!-- ---footer--- -->
 <div class="footer">
    <div class="footer__box container">
+      <div class="footer__contacts">
       <div class="logo"><span>Web</span>Studio</div>
       <div class="addres">м. Київ, пр-т Лесі Українки, 26</div>
       <div class="email">cvvc.dsgn@gmail.com</div>
       <div class="phone">+380 66 78 38 932</div>
+      </div>
+      <div class="footer__social">
+         <div class="footer__title">приєднуйтесь</div>
+         <div class="social__items">
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-instagram"></use>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-twitter"></use>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-facebook"></use>
+            </div>
+            <div>
+            <svg class="social__icons">
+            <use href="./img/sprite.svg#icon-linkedin"></use>
+            </div>
+         </div>
+      </div>
    </div>
 </div>
  </body>
