@@ -552,6 +552,9 @@ body {
 .footer__contacts {
   margin-right: 40px;
 }
+.footer__contacts > .icons{
+fill:#fff;
+}
 
 .footer__social {
   width: 300px;
