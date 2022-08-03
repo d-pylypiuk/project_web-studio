@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 .container {
@@ -223,6 +224,7 @@ body {
 }
 
 .overlay {
+  z-index: 0;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -243,7 +245,7 @@ body {
 
 .headr__btn {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   background: #2196F3;
   color: white;
   padding: 22px 32px;
@@ -552,9 +554,6 @@ body {
 .footer__contacts {
   margin-right: 40px;
 }
-.footer__contacts>.icons{
-fill:#fff;
-}
 
 .footer__social {
   width: 300px;
@@ -589,7 +588,7 @@ fill:#fff;
 
 .email, .phone {
   margin-top: 10px;
-  opacity: 0.6;
+  color: #888;
 }
 
 .icons {
@@ -635,6 +634,8 @@ fill:#fff;
 }
 
 .filter__items {
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
   background: #F5F4FA;
   font-size: 16;
   font-weight: 500;
@@ -673,9 +674,161 @@ fill:#fff;
 }
 
 .portfolio__items {
+  position: relative;
   margin: 10px 0px;
   -ms-flex-preferred-size: 370px;
       flex-basis: 370px;
-  height: 370px;
-  border: 1px solid yellow;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.img__work {
+  overflow: hidden;
+  position: relative;
+}
+
+.hidden__container {
+  z-index: 2;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  overflow: hidden;
+  padding: 50px 20px;
+  background: #2196F3;
+  position: absolute;
+  top: 299px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  color: #fff;
+}
+
+.img__work:hover > .hidden__container {
+  cursor: pointer;
+  top: 0px;
+  opacity: 0.9;
+}
+
+.hidden_work__title {
+  display: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.hidden_work__subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.title__box {
+  background: #fff;
+  padding: 30px 20px;
+}
+
+.items__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 25px;
+}
+
+.items__subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #757575;
+}
+
+.madal__container {
+  pointer-events: none;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__overlay {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal__window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+  z-index: 3;
+  position: relative;
+  width: 530px;
+  height: 580px;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.modal__icon_clouse {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal__icon_clouse div {
+  margin-left: -1px;
+  width: 20px;
+  height: 20px;
+}
+
+.modal__icon_clouse div > .icons {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.modal__icon_clouse:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
