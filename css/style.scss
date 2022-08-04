@@ -307,8 +307,8 @@ body{
 .social__icons{
    transition:all .2s ease-in-out .0s;
    fill:#AFB1B8;
-   width: 25px;
-   height: 25px;
+   width: 20px;
+   height: 20px;
 }
 
 // -------partners sector-------
@@ -544,24 +544,33 @@ body{
    box-shadow:1px 2px 2px rgb(0, 0, 0,.2);
 }
 .modal__icon_clouse{
+   transition: all .2s ease-in-out .0s;
    align-self: flex-end;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: center;
    align-items:center;
-   width: 35px;
-   height: 35px;
-
+   width: 25px;
+   height: 25px;
    border-radius: 50%;
    border:1px solid rgb(0, 0, 0,.2);
 }
-.modal__icon_clouse div{
-   margin-left: -1px;
-   width: 20px ;
-   height: 20px;
+.modal__icon_clouse:hover{
+   border: 1px solid #111;
+   cursor: pointer;
 }
-.modal__icon_clouse div > .icons{
-   fill: rgb(0, 0, 0,.5);
+.modal__icon_clouse:hover>div>.modal__icons{
+   fill:#111;
+}
+.modal__icon_clouse div{
+   width: 15px ;
+   height: 15px;
+}
+.modal__icons{
+   transition: all .2s ease-in-out .0s;
+   width: 15px;
+   height: 15px;
+   fill: rgb(0, 0, 0,.2);
  }
  .modal__icon_clouse:hover{
    opacity: .6;
