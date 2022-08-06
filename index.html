@@ -44,9 +44,9 @@
    <div class="header__title">
       Ефективні рішення для вашого бізнесу
    </div>
-   <a href="" class="headr__btn">
+   <button type="button" class="headr__btn" data-modal-open>
       Замовити послугу
-   </a>
+   </button>
    <div class="overlay"></div>
 </div>
 <!-- header</> -->
@@ -306,18 +306,19 @@
       </div>
    </div>
 </div>
-<div class="madal__container">
+<div class="madal__container is-hidden-class" data-modal>
    <div class="modal__overlay"></div>
    <div class="modal__window">
-      <div class="modal__icon_clouse">
+      <button type="button" class="modal__icon_clouse" data-modal-close>
          <div>
          <svg class="modal__icons">
             <use href="./img/sprite.svg#icon-cancel"></use>
          </svg>
          </div>
-      </div>
+      </button> 
       <div class="modal__forms"></div>
    </div>
 </div>
+<script src="./js/script.js"></script>
  </body>
 </html>

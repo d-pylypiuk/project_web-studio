@@ -740,9 +740,17 @@ body {
   color: #757575;
 }
 
-.madal__container {
-  pointer-events: none;
+.madal__container.is-hidden-class {
+  visibility: hidden;
   opacity: 0;
+  pointer-events: none;
+  -webkit-transform: rotate(-90deg) scale(3);
+          transform: rotate(-90deg) scale(3);
+}
+
+.madal__container {
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -797,6 +805,7 @@ body {
 }
 
 .modal__icon_clouse {
+  background: none;
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   -ms-flex-item-align: end;
