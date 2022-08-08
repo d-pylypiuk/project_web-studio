@@ -306,7 +306,7 @@
       </div>
    </div>
 </div>
-<div class="madal__container is-hidden-class" data-modal>
+<div class="modal__container is-hidden-class" data-modal>
    <div class="modal__overlay"></div>
    <div class="modal__window">
       <button type="button" class="modal__icon_clouse" data-modal-close>
@@ -315,8 +315,52 @@
             <use href="./img/sprite.svg#icon-cancel"></use>
          </svg>
          </div>
-      </button> 
-      <div class="modal__forms"></div>
+      </button>
+      <form action="#" class="modal" autocomplete="off">
+      
+      <p class="form__title">Залиште данні ми зателефонуємо</p>
+      <label class="form__label">
+         <span class="label__text">Ім'я</span>
+         <span class="form__field">
+            <input type="text" class="form__input" name="Ім'я" required minlength="3">
+            <svg class="form-input-icons">
+               <use href="./img/sprite.svg#icon-user"></use>
+            </svg>
+         </span>
+      </label>
+      <label class="form__label">
+         <span class="label__text">Телефон</span>
+         <span class="form__field">
+            <input type="tel" name="Телефон" class="form__input" required minlength="10">
+            <svg class="form-input-icons">
+               <use href="./img/sprite.svg#icon-label-phone"></use>
+            </svg>
+         </span>
+      </label>
+      <label class="form__label">
+         <span class="label__text">Пошта</span>
+         <span class="form__field">
+            <input type="email" class="form__input" name="Пошта" required>
+            <svg class="form-input-icons">
+               <use href="./img/sprite.svg#icon-label-mail"></use>
+            </svg>
+         </span>
+      </label>
+      <label class="form__label">
+         <span class="label__text">Коментар</span>
+         <textarea name="Коментар" class="form__coment" placeholder="Введіть текст"></textarea>
+      </label>
+      <label class="deal__label">
+         <input type="checkbox" class="deal__checkbox visual-hidden" name="Договір" required>Погоджуюсь з розсилкою та приймую&nbsp;<a href="#" class="deal">Умови договору</a>
+         <svg class="icon-unchecked">
+            <use href="./img/sprite.svg#icon-unchecked"></use>
+         </svg>
+         <svg class="icon-checked">
+            <use href="./img/sprite.svg#icon-checked"></use>
+         </svg>
+      </label>
+      <button type="sublime" class="modal__send_btn">Відправити</button>
+      </form>
    </div>
 </div>
 <script src="./js/script.js"></script>

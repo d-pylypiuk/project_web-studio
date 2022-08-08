@@ -81,6 +81,20 @@ body {
   margin: 0px auto;
 }
 
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .top__line {
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -740,7 +754,7 @@ body {
   color: #757575;
 }
 
-.madal__container.is-hidden-class {
+.modal__container.is-hidden-class {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -748,7 +762,7 @@ body {
           transform: rotate(-90deg) scale(3);
 }
 
-.madal__container {
+.modal__container {
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
   display: -webkit-box;
@@ -787,17 +801,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px;
   z-index: 3;
-  position: relative;
   width: 530px;
-  height: 580px;
+  height: auto;
   background: #fff;
   border-radius: 4px;
   -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
@@ -830,12 +843,12 @@ body {
 }
 
 .modal__icon_clouse:hover {
-  border: 1px solid #111;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
 
 .modal__icon_clouse:hover > div > .modal__icons {
-  fill: #111;
+  fill: #2196F3;
 }
 
 .modal__icon_clouse div {
@@ -852,6 +865,218 @@ body {
 }
 
 .modal__icon_clouse:hover {
-  opacity: 0.6;
+  opacity: 1;
   cursor: pointer;
+}
+
+.modal {
+  width: 420px;
+}
+
+.form__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.15;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 12px;
+}
+
+.form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 15px;
+}
+
+.label__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  margin-bottom: 6px;
+  margin-left: 10px;
+}
+
+.form__field {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  position: relative;
+  width: 100%;
+}
+
+.form__input {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  outline: none;
+  padding: 12px 12px 12px 42px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.form__input:focus-within, .form__input:hover {
+  border: 1px solid #2196F3;
+  color: #2196F3;
+}
+
+.form__coment:focus-within, .form__coment:hover {
+  border: 1px solid #2196F3;
+  color: #2196F3;
+}
+
+.form__input:focus-within + .form-input-icons, .form__input:hover + .form-input-icons {
+  fill: #2196F3;
+}
+
+.form-input-icons {
+  fill: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.form__coment {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  font-size: 14px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.form__coment::-webkit-input-placeholder {
+  color: #666;
+  font-size: 14px;
+}
+
+.form__coment::-moz-placeholder {
+  color: #666;
+  font-size: 14px;
+}
+
+.form__coment:-ms-input-placeholder {
+  color: #666;
+  font-size: 14px;
+}
+
+.form__coment::-ms-input-placeholder {
+  color: #666;
+  font-size: 14px;
+}
+
+.form__coment::placeholder {
+  color: #666;
+  font-size: 14px;
+}
+
+.deal__label {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  padding-left: 28px;
+  font-size: 14px;
+}
+
+.deal {
+  display: inline-block;
+  font-size: 14px;
+  color: #2196F3;
+  text-decoration: underline;
+}
+
+.deal:hover {
+  text-decoration: none;
+}
+
+.icon-unchecked, .icon-checked {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 0px;
+}
+
+.icon-unchecked {
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.icon-checked {
+  position: absolute;
+  visibility: hidden;
+  top: 50%;
+  opacity: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #2196F3;
+}
+
+.deal__checkbox:checked ~ .icon-unchecked {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.deal__checkbox:checked ~ .icon-checked {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__send_btn {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  display: block;
+  margin: 40px auto;
+  padding: 15px 60px;
+  border-radius: 5px;
+  background: #2196F3;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.modal__send_btn:hover {
+  background: #188CE8;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
