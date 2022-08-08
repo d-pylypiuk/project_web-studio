@@ -621,6 +621,98 @@ body {
   color: #2196F3;
 }
 
+.footer__send {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.footer__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer__mail {
+  margin-right: 12px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  color: #999;
+  background: none;
+  height: 50px;
+  padding: 0px 15px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.footer__mail::-webkit-input-placeholder {
+  color: #999;
+}
+
+.footer__mail::-moz-placeholder {
+  color: #999;
+}
+
+.footer__mail:-ms-input-placeholder {
+  color: #999;
+}
+
+.footer__mail::-ms-input-placeholder {
+  color: #999;
+}
+
+.footer__mail::placeholder {
+  color: #999;
+}
+
+.footer__send__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 200px;
+  background: #2196F3;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.footer__send__btn:hover {
+  background: #188CE8;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.footer__icons {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
 .portfolo {
   padding-top: 100px;
   padding-bottom: 60px;
@@ -818,6 +910,7 @@ body {
 }
 
 .modal__icon_clouse {
+  margin: 10px 10px;
   background: none;
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
@@ -874,12 +967,13 @@ body {
 }
 
 .form__title {
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 22px;
   line-height: 1.15;
   text-align: left;
-  padding-left: 10px;
-  margin-bottom: 12px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  color: #555;
 }
 
 .form__label {
@@ -1026,12 +1120,15 @@ body {
 
 .icon-unchecked, .icon-checked {
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 17px;
+  height: 17px;
   left: 0px;
 }
 
 .icon-unchecked {
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  fill: #444;
   position: absolute;
   opacity: 1;
   top: 50%;
@@ -1040,6 +1137,8 @@ body {
 }
 
 .icon-checked {
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
   position: absolute;
   visibility: hidden;
   top: 50%;
@@ -1047,6 +1146,8 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   fill: #2196F3;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .deal__checkbox:checked ~ .icon-unchecked {
@@ -1059,24 +1160,30 @@ body {
 .deal__checkbox:checked ~ .icon-checked {
   opacity: 1;
   visibility: visible;
+  -webkit-transform: rotate(0deg) translateY(-50%);
+          transform: rotate(0deg) translateY(-50%);
 }
 
 .modal__send_btn {
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   display: block;
-  margin: 40px auto;
-  padding: 15px 60px;
+  margin: auto auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  height: 50px;
+  padding: 0 60px;
   border-radius: 5px;
   background: #2196F3;
   color: #fff;
   font-weight: 700;
   font-size: 18px;
-  text-transform: uppercase;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .modal__send_btn:hover {
   background: #188CE8;
-  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
 }

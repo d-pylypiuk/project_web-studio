@@ -4,7 +4,6 @@
   <title>WebStudio</title>
 
   <link rel="stylesheet" href="css/style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -278,12 +277,14 @@
 <!-- ---footer--- -->
 <div class="footer">
    <div class="footer__box container">
+
       <div class="footer__contacts">
       <div class="logo"><span>Web</span>Studio</div>
       <div class="addres">м. Київ, пр-т Лесі Українки, 26</div>
       <div class="email">cvvc.dsgn@gmail.com</div>
       <div class="phone">+380 66 78 38 932</div>
       </div>
+
       <div class="footer__social">
          <div class="footer__title">приєднуйтесь</div>
          <div class="social__items">
@@ -305,7 +306,20 @@
             </div>
          </div>
       </div>
+      <div class="footer__send">
+         <div class="footer__title">Підпишіться на розсилку</div>
+         <div class="footer__label">
+            <input type="email" placeholder="Email" class="footer__mail">
+            <button type="sublime" class="footer__send__btn">
+               Надіслати
+               <svg class="footer__icons">
+                  <use href="./img/sprite.svg#icon-send"></use>
+               </svg>
+            </button>
+         </div>
+      </div>
    </div>
+
 </div>
 <div class="modal__container is-hidden-class" data-modal>
    <div class="modal__overlay"></div>
